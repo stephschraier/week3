@@ -7,11 +7,19 @@ function getRandomInt(max) {
 function pageLoad() {
   // 👇 YOUR CODE BEGINS HERE. DON'T CHANGE ANY OTHER CODE. 👇
 
+  
+
   // 🔥 YOUR CODE GOES HERE. 🔥
   // Try setting two variables – die1 and die2
   // Also set a third variable - total, which sums the two die values
   // Start by hard-coding the values (1-6), then attempt to use the 
   // getRandomInt() function to randomize the values
+
+  let die1 = getRandomInt(6)
+  let die2 = getRandomInt(6)
+  let total = die1 + die2
+
+  output = total
   
   //  👆 YOUR CODE ENDS HERE. DON'T CHANGE ANY OTHER CODE 👆
   

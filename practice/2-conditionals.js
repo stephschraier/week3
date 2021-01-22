@@ -6,10 +6,10 @@ function getRandomInt(max) {
 
 function pageLoad() {
   // we start with the dice from the first practice exercise
-  let die1 = getRandomInt(6)
-  let die2 = getRandomInt(6)
-  let total = die1 + die2
-  let output
+  //let die1 = getRandomInt(6)
+  //let die2 = getRandomInt(6)
+  //let total = die1 + die2
+  //let output
 
   // 👇 YOUR CODE BEGINS HERE. DON'T CHANGE ANY OTHER CODE. 👇
   
@@ -17,6 +17,17 @@ function pageLoad() {
   // the value of the variable 'output' is already set to display on the page
   // write an if.. else if.. else statement to evaluate the value of 'total'
   // and set the value of 'output' appropriately
+
+  let die1 = getRandomInt(6)
+  let die2 = getRandomInt(6)
+  let total = die1 + die2
+  let output
+
+  if (total == '7' || total == '11') {output = 'You win!'}
+  else if (total == '2' || total == '3' || total == '12') {output = 'You lose!'
+} else {
+    output = `the point is ${total}` }
+
 
   //  👆 YOUR CODE ENDS HERE. DON'T CHANGE ANY OTHER CODE 👆
 

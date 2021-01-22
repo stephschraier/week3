@@ -4,8 +4,29 @@ document.querySelector('.nom-nom-nom').addEventListener('click', (event) => {
 
   // 🔥🔥🔥 YOUR CODE GOES HERE 🔥🔥🔥
   // The variable 'dinner' is already set to the value in the text input
-  let output
-  output = '🌮'
+
+//console.log(dinner)
+let output
+
+let quantity = 5
+
+//decision tree
+if (dinner == 'tacos') {
+  if (quantity > 3) { 
+    output = 'too many!'
+  } else {
+  output = '🌮' }
+  } else if (dinner == 'broccoli') {
+  output = '🥦' 
+  } else if (dinner == 'cookies' || dinner == 'ice cream') {
+  output = '🧁'
+  } else {
+  output = '😭'
+  }
+ 
+
+
+//output = '🥸'
 
   //  👆 YOUR CODE ENDS HERE. DON'T CHANGE ANY OTHER CODE 👆
   /*

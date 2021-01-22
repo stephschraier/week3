@@ -36,5 +36,44 @@ function pageLoad() {
   // 🔥🔥🔥 YOUR CODE GOES HERE 🔥🔥🔥
   console.log(database)
 
+
+let numberOfPromotions = database.products.length
+let promo1 = database.promotions[getRandomInt(numberOfPromotions -1)]
+let promo2 = database.promotions[getRandomInt(numberOfPromotions -1)]
+let promo3 = database.promotions[getRandomInt(numberOfPromotions -1)]
+
+  numberOfProducts = database.products.length
+  products = database.products
+  promotion1Description = promo1.description
+  promotion2Description = promo2.description
+  promotion3Description = promo3.description
+
+  if (promo1.type == 'shipping') {
+        promotion1Icon = '🚛'
+        } else if (promo1.type == 'discount') {
+        promotion1Icon = '🤑'
+      } else {
+        promotion1Icon = '🎰'
+      }
+
+      if (promo2.type == 'shipping') {
+        promotion2Icon = '🚛'
+        } else if (promo2.type == 'discount') {
+        promotion2Icon = '🤑'
+      } else {
+        promotion2Icon = '🎰'
+      }
+
+      if (promo3.type == 'shipping') {
+        promotion3Icon = '🚛'
+        } else if (promo3.type == 'discount') {
+        promotion3Icon = '🤑'
+      } else {
+        promotion3Icon = '🎰'
+      }
+ 
+  
+
+
   //  👆 YOUR CODE ENDS HERE. DON'T CHANGE ANY OTHER CODE 👆
 }
